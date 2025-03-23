@@ -1,0 +1,74 @@
+.heart-piece-0 {
+  left : 0px;
+  -webkit-Animation-delay: 0s;
+          animation-delay: 0s;
+  background-colour: #ec2d73;
+} 
+ 
+import turtle
+
+pen = turtle.Turtle()
+pen.speed(0)  # Set speed to fastest
+
+# Function to draw a heart shape
+def draw_heart():
+    for i in range(2):
+        pen.circle(50, 150)
+        pen.left(120)
+
+# Draw the heart
+draw_heart()
+
+turtle.done()
+import turtle
+
+pen = turtle.Turtle()
+pen.speed(0)  # Set speed to fastest
+pen.color("red")  # Set pen color to red
+pen.fillcolor("pink") # Fill the heart with pink
+
+# Function to draw a more detailed heart shape
+def draw_heart():
+    pen.begin_fill() # Start filling the shape
+    pen.left(140)
+    pen.forward(113)
+    pen.circle(50, 180)
+    pen.left(140)
+    pen.circle(50, 180)
+    pen.forward(112)
+    pen.end_fill() # End filling
+
+# Draw the heart
+draw_heart()
+
+# Add a stem
+pen.penup()
+pen.goto(0, 100)
+pen.pendown()
+pen.color("green")
+pen.setheading(90) # Point upwards
+pen.forward(50)
+
+
+# Add some leaves (simplified)
+pen.penup()
+pen.goto(-10, 150)
+pen.pendown()
+pen.setheading(160)
+pen.fillcolor("lightgreen")
+pen.begin_fill()
+pen.circle(10,180)
+pen.end_fill()
+
+pen.penup()
+pen.goto(10, 150)
+pen.pendown()
+pen.setheading(20)
+pen.begin_fill()
+pen.circle(10,180)
+pen.end_fill()
+
+
+
+turtle.done()
+
